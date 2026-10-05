@@ -1,0 +1,2 @@
+# assignment_1_Munyengabe_ishimwe_kelly_Leondry-20251SEN081
+Assignment 1 Sunrise Supermarket
