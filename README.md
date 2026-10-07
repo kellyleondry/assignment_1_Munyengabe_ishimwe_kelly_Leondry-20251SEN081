@@ -45,4 +45,21 @@ SELECT
 FROM order_items oi
 INNER JOIN products p
     ON oi.product_id = p.product_id;
-as shown here [Screen shoot JOIN query 2](SCREENSHOOTS/JOIN_queries_1.png)
+as shown here [Screen shoot JOIN query 2](SCREENSHOOTS/JOIN_queries_2.png)
+
+3. JOIN Query 3 Show all customers and their orders, including customers who have no
+orders.
+
+Query
+
+SELECT
+    c.customer_id,
+    c.customer_name,
+    c.city,
+    o.order_id,
+    o.order_date
+FROM customers c
+LEFT JOIN orders o
+    ON c.customer_id = o.customer_id;
+as shown here [Screen shoot JOIN query 3](SCREENSHOOTS/JOIN_queries_2.png)
+    
