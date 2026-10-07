@@ -29,6 +29,20 @@ SELECT
 FROM orders o
 INNER JOIN customers c
     ON o.customer_id = c.customer_id;
-    as shown here [JOIN query 1](https://www.google.com)
+    as shown here [Screen shoot JOIN query 1](SCREENSHOOTS/JOIN_queries_1.png)
 
+2. JOIN Query 2  Display each order item together with the product name, category, price,
+and quantity.
 
+Query
+
+SELECT
+    oi.order_item_id,
+    p.product_name,
+    p.category,
+    p.price,
+    oi.quantity
+FROM order_items oi
+INNER JOIN products p
+    ON oi.product_id = p.product_id;
+as shown here [Screen shoot JOIN query 2](SCREENSHOOTS/JOIN_queries_1.png)
